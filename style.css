@@ -1,0 +1,123 @@
+body{
+	background-color: #1E90FF;
+	font-family: 'Bodoni Moda', serif;
+}
+main{
+	margin:center;
+	max-width: 1024px;
+	background-color: #BAE6D7;
+	margin:auto;
+	padding-top:60px;
+	padding-bottom: 90px;
+
+}
+
+.flex{
+	display: flex;
+	justify-content: space-around;
+}
+.flax-around{
+	margin:30px;
+}
+h1{
+	color:white;
+	text-align: center;
+	font-size: 60px;
+}
+h2{
+	margin-top: 30px;
+	text-align: center;
+	background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%)
+}
+p{
+	max-width: 690px;
+	margin:auto;
+	margin-bottom: 40px;
+}
+ul{
+	 list-style-type:none;
+}
+/*images*/
+.img1{
+	max-width:300px;
+}
+.img2{
+	max-width: 1024px;
+}
+
+footer{
+	position:fixed;
+	font-size: 30px;
+	width:100%;
+	bottom: 0;
+	background-color: #1E90FF;
+	margin:auto;
+	display:flex;
+	justify-content: space-between;
+}
+.lien{
+	text-decoration: none;
+	margin:30px;
+	color:black;
+	font-weight: bold;
+	}
+	.lien:hover{
+		color:#D2691E;
+		animation:animation 80ms ease-in-out;
+		animation-iteration-count:20
+	}
+
+iframe{
+	margin-left: 30px;
+	width:530px;
+	}
+@keyframes animation {
+ 0%{transform:translateX(9%);transform:rotate(4deg)}
+ 100%{transform:translateX(-9%);transform:rotate(-4deg)}
+}
+@media (max-width: 640px){
+	iframe{
+	margin:auto;
+	width:300px;
+	height: 300px;
+	}
+	.card{
+		margin:auto;
+		margin-top: 30px;
+	}
+	h1{
+		font-size: 25px;
+	}
+	.img1{
+		max-width: 320px;
+		margin:auto;
+	}
+	.img2{
+		max-width: 320px;
+		display:block;
+		margin:auto;
+
+	}
+	.flex{
+		flex-direction: column;
+	}
+	footer{
+		font-size: 15px;
+	}
+}
+@media all and (min-width: 640px) and (max-width: 768px){
+	iframe{
+	margin:auto;
+	width:400px;
+	height: 300px;
+	}
+	.img1{
+		max-width: 420px;
+		margin:auto;
+	}
+	.img2{
+		max-width: 720px;
+		display:block;
+		margin:auto;
+	}
+	}
